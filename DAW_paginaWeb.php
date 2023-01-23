@@ -7,9 +7,12 @@ function carga($clase)
 
 }//fin de la función
 
-header("location:areaUsuario.php");
+if(isset($_POST['submit'])){
+    header("location:areaUsuario.php");
 
-spl_autoload_register("carga");
+    spl_autoload_register("carga");
+} 
+
 
 ?>
 
